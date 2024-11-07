@@ -11,4 +11,14 @@ entries:
     urls:
     - https://literalplus.github.io/pghero-helmchart/pghero-v2.8.3.tgz
     version: v2.8.3
-generated: "2022-06-30T01:47:31.072663+04:00"
+  - apiVersion: v2
+    appVersion: 3.6.1
+    created: "2024-11-07T23:13:31.074685+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 924223d0ceb42af45d37c20d25b561dd57f6fbd1adff56dd1e36199728b0db80
+    name: pghero
+    type: application
+    urls:
+    - https://literalplus.github.io/pghero-helmchart/pghero-v3.6.1.tgz
+    version: v3.6.1
+generated: "2024-11-07T23:13:31.074685+01:00"
