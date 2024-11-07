@@ -38,6 +38,7 @@ spec:
         {{ else }}
           value: "postgres://{{ .Values.database.user }}:{{ .Values.database.password }}@{{ .Values.database.url }}:{{ .Values.database.port }}/{{ .Values.database.dbName }}"
         {{ end }}
+        {{ if .Values.enableBasicAuth }}
         - name: PGHERO_USERNAME
         {{ if .Values.secretName }}
           valueFrom:
@@ -55,6 +56,7 @@ spec:
               key: "password"
         {{ else }}
           value: "{{ .Values.pgheroPassword }}"
+        {{ end }}
         {{ end }}
         name: {{ .Chart.Name }}
         securityContext:

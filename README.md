@@ -42,6 +42,7 @@ The following table lists the configurable parameters of the PgHero chart and th
 | `database.dbName` | DataBase name | `""` |
 | `pgheroUser` | Login user name | `""` |
 | `pgheroPassword` | Login user password | `""` |
+| `enableBasicAuth` | Whether to use the configured basic auth user & password | `true` |
 | `nodeSelector` | Configurable nodeSelector so that you can target specific nodes for your Elasticsearch cluster | `"{}"` |
 
 ## Removal

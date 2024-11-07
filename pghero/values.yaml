@@ -13,6 +13,10 @@ database:
 pgheroUser:
 pgheroPassword:
 
+# Enable basic auth by passing the configured user & password.
+# Otherwise, a reverse proxy is assumed to handle auth 
+enableBasicAuth: true
+
 
 image:
   repository: ankane/pghero
